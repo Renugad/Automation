@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="5" name="Failed suite [Tests]">
+  <parameter name="browser" value="FireFox"/>
+  <test name="test1(failed)">
+    <parameter name="browser" value="FireFox"/>
+    <classes>
+      <class name="com.rightcomply.pages.HomePageTest">
+        <methods>
+          <include name="init"/>
+          <include name="tearDown"/>
+          <include name="testInit"/>
+          <include name="logout"/>
+          <include name="setScreenshot"/>
+          <include name="testTwoBanners"/>
+        </methods>
+      </class> <!-- com.rightcomply.pages.HomePageTest -->
+    </classes>
+  </test> <!-- test1(failed) -->
+</suite> <!-- Failed suite [Tests] -->

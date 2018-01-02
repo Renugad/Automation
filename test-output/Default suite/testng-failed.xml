@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.rightcomply.pages.VendorPostDashboardTest">
+        <methods>
+          <include name="init"/>
+          <include name="tearDown"/>
+          <include name="setScreenshot"/>
+          <include name="validateusericon"/>
+          <include name="testInit"/>
+          <include name="validatesearch"/>
+        </methods>
+      </class> <!-- com.rightcomply.pages.VendorPostDashboardTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
