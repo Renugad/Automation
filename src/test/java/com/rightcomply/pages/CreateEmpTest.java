@@ -30,7 +30,7 @@ public class CreateEmpTest extends TestBase{
 	HomePage homepage;
 	Reusable reuse;
 	PosthiringDashboardVendor vendordash;
-
+    LaunchPage launchpage;
 	CreateEmployee createemp;
 	VendordashEmployee vendoremp;
 	static FileInputStream fi;
@@ -47,13 +47,15 @@ public class CreateEmpTest extends TestBase{
 
 		homepage = PageFactory.initElements(webDriver, HomePage.class);
 		reuse= PageFactory.initElements(webDriver, Reusable.class);
-
+		launchpage=PageFactory.initElements(webDriver, LaunchPage.class);
 		vendordash = PageFactory.initElements(webDriver,PosthiringDashboardVendor.class);
 		vendoremp= PageFactory.initElements(webDriver, VendordashEmployee.class);
 		createemp=PageFactory.initElements(webDriver, CreateEmployee.class);
-		homepage.getloginTextBox().sendKeys("rcvendor@berijam.com");
+		homepage.getloginTextBox().sendKeys("tcs1@berijam.com");
 		homepage.getpasswordtext().sendKeys("welcome123");
 		homepage.getlogin().click();
+		Thread.sleep(6000);
+		launchpage.getAddworkforce().click();
 		action=new Actions(webDriver);
 		action.moveToElement(vendordash.getAdd()).build().perform();
 		vendordash.getAdd().click();
@@ -91,6 +93,9 @@ public class CreateEmpTest extends TestBase{
 			String workpermitexpiry=s.getCell(8, i).getContents();
 			String workpermitfile=s.getCell(9, i).getContents();
 			String photoidissuedate=s.getCell(10,i).getContents();
+			String photoidexpireson=s.getCell(11,i).getContents();
+			String photoidfile=s.getCell(12,i).getContents();
+			String 
 			arlList.add(fname);
 			arlList.add(lname);
 			arlList.add(email);

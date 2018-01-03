@@ -22,6 +22,12 @@ public class SignupPage extends Page{
 	private final String free="radio1";
 	private final String paid="radio2";
 	private final String makepayment="make_payment";
+	private final String firstnameerror=".//*[@id='create-account']/div[1]/div[1]/div/span";
+	private final String lastnameerror=".//*[@id='create-account']/div[1]/div[2]/div/span";
+	private final String emailerror=".//*[@id='create-account']/div[3]/span";
+	private final String passworderror=".//*[@id='create-account']/div[4]/span";
+	private final String confirmpassworderror=".//*[@id='create-account']/div[4]/span";
+	private final String businessnameerror=".//*[@id='create-account']/div[2]/span";
 	
 	 @FindBy(how=How.XPATH,using=signupheading)
 	    private WebElement signup_heading;
@@ -55,32 +61,44 @@ public class SignupPage extends Page{
 	 
 	 @FindBy(how=How.ID,using=makepayment)
 	    private WebElement make_payment;
-	
+	 
+	 @FindBy(how=How.XPATH,using=firstnameerror)
+	 	private WebElement firstname_error;
+	 
+	 @FindBy(how=How.XPATH,using=lastnameerror)
+	 	private WebElement lastname_error;
+	 
+	 @FindBy(how=How.XPATH,using=emailerror)
+	 	private WebElement email_error;
+	 
+	 @FindBy(how=How.XPATH,using=businessnameerror)
+	 	private WebElement business_error;
+	 
+	 @FindBy(how=How.XPATH,using=passworderror)
+	 	private WebElement password_error;
+	 
+	 @FindBy(how=How.XPATH,using=confirmpassworderror)
+	 	private WebElement confirmpassword_error;
+	 
+	 
 	public WebElement getfname() {
 		return Firstname;
-	
-	}
+		}
 	
 	public WebElement getlname() {
 		return Lastname;
-	
-	}
-	
+		}
 	public WebElement getEmail() {
 		
 		return email_id;
-	
-	}
-	
+		}
 	public WebElement getPassword() {
 		return pass_word  ;
-	
-	}
+		}
 	
 	public WebElement getConfirmpassword() {
 		return confirm_password ;
-	
-	}
+		}
 	public WebElement getBusinessname()
 	{
 		return Businessname;
@@ -98,4 +116,35 @@ public class SignupPage extends Page{
 	{
 		return paid_plan;
 	}
+	public WebElement getRegister()
+	{
+		return make_payment;
+	}
+	public WebElement getFirstnameerror()
+	{
+		return firstname_error;
+	}
+	
+	public WebElement getLastnameerror()
+	{
+		return lastname_error;
+	}
+	
+	public WebElement getemailerror()
+	{
+		return email_error;
+	}
+	public WebElement getpasswordError()
+	{
+		return password_error;
+	}
+	public WebElement getconfirmpasswordError()
+	{
+		return confirmpassword_error;
+	}
+	public WebElement getBusinessnameError()
+	{
+		return business_error;
+	}
+		
 }

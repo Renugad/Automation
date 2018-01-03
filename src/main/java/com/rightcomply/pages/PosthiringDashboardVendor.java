@@ -28,46 +28,13 @@ private final String searchtext=".//*[@id='tab1']/div/div[2]";
 private final String empname="//p[@class='name']";
 
 
-/*	
-private final String notification="/html/body/nav/div/ul/li[1]/a/i";
-private final String warning="/html/body/nav/div/ul/li[1]/ul/li[2]/a";
-private final String notitask="/html/body/nav/div/ul/li[1]/ul/li[2]/a";
-private final String expiringsoon="/html/body/nav/div/ul/li[1]/ul/li[1]/a";
-private final String myprofile="//a[@href='http://pre.rightcomply.com/vendor/Myprofile']";
-private final String clientinvite="//a[@class='clt-invite']";
-private final String clientlisting="//a[@href='http://pre.rightcomply.com/client/clientinviteListings']";
 
-private final String employees="Employees";
-private final String contractors="Contractors";
-private final String task="Tasks";
-private final String firstname="//*[@id='example']/thead/tr/th[1]";
-private final String lastname="//*[@id='example']/thead/tr/th[2]";
-private final String employeeorcontractor="//*[@id='example']/thead/tr/th[3]";
-private final String assignedclient="//*[@id='example']/thead/tr/th[4]";
-private final String startdate="//*[@id='example']/thead/tr/th[5]";
-private final String city="//*[@id='example']/thead/tr/th[6]";
-private final String compliancestatus="//*[@id='example']/thead/tr/th[7]";
-private final String action="//*[@id='example']/thead/tr/th[8]]";
 
-private final String entrylength="//*[@id='example_length']/label/select";
-private final String usericon="dropdownMenu1";
-private final String datatable="example";
-private final String bottomline="//div[@id='example_info']";
-private final String taskdropdown="//*[@id='directory-n2']";
-private final String warningdropdown="//*[@id='directory-n1']";
-private final String expiringdropdown="//*[@id='directory-n']";
+	@FindBy(how=How.XPATH,using=empname)
+	private WebElement employeename;
 
-   @FindBy(how=How.XPATH,using=expiringdropdown)
-   private WebElement expiring_drop;
-
-   @FindBy(how=How.XPATH,using=warningdropdown)
-   private WebElement warning_drop;*/
-
-@FindBy(how=How.XPATH,using=empname)
-private WebElement employeename;
-
-   @FindBy(how=How.XPATH,using=logoff)
-   private WebElement logout;
+	@FindBy(how=How.XPATH,using=logoff)
+	private WebElement logout;
 
 	@FindBy(how=How.XPATH,using=clickimg)
 	private WebElement clickableimg;
