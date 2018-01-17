@@ -70,12 +70,24 @@ public class HomePageTest extends TestBase {
 		
 	}
 	
+	@Test(description="validate the email in homepage")
+	public void ValidateEmail() throws InterruptedException
+	{
+		homepage.getEmail().sendKeys("hfb");
+		homepage.submit().click();
+		Thread.sleep(7000);
+		String error=homepage.getLoginEmailErr().getText();
+		Assert.assertEquals(error, "Please enter a valid email address.");
+		System.out.println("Test case to validate email in forgot passwordlink is Sucessful");
+	}
+	
 	@Test(description="Check SignIn Option is displayed")
 	public void testSignInOption()
 	{
 		homepage.email().sendKeys("tcs1@gmail.com");
 		homepage.password().sendKeys("welcome123");
 	}
+	
 	
 	
 	

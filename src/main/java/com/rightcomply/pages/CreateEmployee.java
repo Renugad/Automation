@@ -36,7 +36,7 @@ public class CreateEmployee extends Page{
 	private final String client=".//*[@id='carousel-example-generic3']/div/div/div[1]/div/div[1]/div/div[3]/div[2]/span/div/button";
 	private final String jobcity="city";
 	private final String startdate="example6";
-	private final String endate="end_date";
+	private final String enddate="end_date";
 	private final String notes="textarea";
 	
 	//documents
@@ -71,6 +71,8 @@ public class CreateEmployee extends Page{
 	private final String successmsg="//div[@class='alert alert-success']";
 	private final String upload="//*[@id='usrfile']";
 	
+	@FindBy(how=How.ID,using=enddate)
+	private WebElement end_date;
 	
 	@FindBy(how=How.XPATH,using=upload)
 	private WebElement uploaddoc;
@@ -113,7 +115,6 @@ public class CreateEmployee extends Page{
 	
 	@FindBy(how=How.ID,using=dateofbirth)
 	private WebElement dob;
-
 	
 	@FindBy(how=How.ID,using=jobcity)
 	private WebElement job_city;
@@ -123,8 +124,7 @@ public class CreateEmployee extends Page{
 	
 	@FindBy(how=How.ID,using=workpermitdocupload)
 	private WebElement workpermitupload;
-	
-	
+		
 	@FindBy(how=How.XPATH,using=i9)
 	private WebElement i_9;
 	
@@ -147,30 +147,46 @@ public class CreateEmployee extends Page{
 	private WebElement lcadoc;
 	@FindBy(how=How.ID,using=lcaexpiry)
 	private WebElement lca_expiry;
-	
-	
+
 	@FindBy(how=How.XPATH,using=w4upload)
 	private WebElement w4_upload;
 	
-			
 	@FindBy(how=How.ID,using=notes)
 	private WebElement note;
+	
 	@FindBy(how=How.TAG_NAME,using=cancel)
 	private WebElement cancel_button;
 	
 	@FindBy(how=How.XPATH,using=save)
 	private WebElement save_button;
+	
 	@FindBy(how=How.XPATH,using=startdate)
 	private WebElement job_startdate;
 	
-	
 	@FindBy(how=How.XPATH,using=fname)
 	private WebElement firstname;
+	
 	@FindBy(how=How.ID,using=lname)
 	private WebElement lastname;
 	
+	@FindBy(how=How.ID,using=projectname)
+	private WebElement project_name;
 	
+	@FindBy(how=How.ID,using=w4expiry)
+	private WebElement w4_expiry;
 	
+	@FindBy(how=How.ID,using=docexpiry)
+	private WebElement document_expiry;
+	
+	public WebElement getEndDate()
+	{
+		return end_date;
+	}
+	public WebElement getProjectName()
+	{
+		return project_name;
+		
+	}
 	public WebElement getfname()
 	{
 		return firstname;
@@ -223,7 +239,7 @@ public class CreateEmployee extends Page{
 	{
 		return i_9;
 	}
-	public WebElement getei9expiry()
+	public WebElement geti9expiry()
 	{
 		return i9_expiry;
 	}
@@ -315,8 +331,20 @@ public class CreateEmployee extends Page{
 	{
 		return uploaddoc;
 	}
+	public WebElement getDocexpiry()
+	{
+		return document_expiry;
+	}
+	public WebElement getW4expiry()
+	{
+		return w4_expiry;
+	}
 	public WebElement getW4()
 	{
 		return w4_upload;
+	}
+	public WebElement getNote()
+	{
+		return note;
 	}
 }

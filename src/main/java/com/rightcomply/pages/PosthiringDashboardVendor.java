@@ -9,7 +9,6 @@ public class PosthiringDashboardVendor {
 private final String clickimg="//img[@alt='Right Comply']";
 private final String workforce="My Workforce"; 
 private final String userdropdown="//*[@id='dropdownMenu1']";
-
 private final String client="Clients";
 private final String setting="Settings";
 private final String logoff="//a[@href='http://new.rightcomply.com/login_new/logout']";
@@ -26,9 +25,23 @@ private final String all=".//*[@id='myTab_ss']/li[5]/a";
 private final String search=".//*[@id='search-form']/div/div[1]/i";
 private final String searchtext=".//*[@id='tab1']/div/div[2]";
 private final String empname="//p[@class='name']";
+private final String uploaddocumentlink="//p[@class='upload_model_click blue-txt']";
+private final String uploadi9=".//*[@id='upifileimg']";
+private final String uploadlca=".//*[@id='uplcaimg']";
+private final String uploadphotoid=".//*[@id='upphotoimg']";
+private final String i9expiry=".//*[@id='i9expiry_date']";
+private final String lcaexpiry=".//*[@id='lcaexpiry_date']";
+private final String photoidissue=".//*[@id='photoissue_date']";
+private final String photoidexpiry=".//*[@id='photoexpiry_date']";
+private final String updatedocuments=".//*[@id='all_form_submit']";
+private final String heading="//h2[@class='counts text-left pull-left']";
 
 
 
+	@FindBy(how=How.XPATH,using=heading)
+	private WebElement Heading;
+	@FindBy(how=How.XPATH,using=uploaddocumentlink)
+	private WebElement upload_link;
 
 	@FindBy(how=How.XPATH,using=empname)
 	private WebElement employeename;
@@ -76,7 +89,7 @@ private final String empname="//p[@class='name']";
 	private WebElement Recentlyadded;
 	
 	@FindBy(how=How.XPATH,using=all)
-	private WebElement tasklink;
+	private WebElement All;
 	
 	@FindBy(how=How.XPATH,using=search)
 	private WebElement Searchicon;
@@ -90,45 +103,63 @@ private final String empname="//p[@class='name']";
 	@FindBy(how=How.XPATH,using=addmulti_employee)
 	private WebElement multiemployee;
 	
-	/*@FindBy(how=How.XPATH,using=startdate)
-	private WebElement startingdate;
+	@FindBy(how=How.XPATH,using=uploadi9)
+	private WebElement upload_i9;
 	
-	@FindBy(how=How.XPATH,using=city)
-	private WebElement location;
+	@FindBy(how=How.XPATH,using=uploadlca)
+	private WebElement upload_lca;
 	
-	@FindBy(how=How.XPATH,using=compliancestatus)
-	private WebElement compstatus;
+	@FindBy(how=How.XPATH,using=uploadphotoid)
+	private WebElement upload_photoid;
 	
-	@FindBy(how=How.XPATH,using=action)
-	private WebElement actionbutton;
+	@FindBy(how=How.XPATH,using=i9expiry)
+	private WebElement i9_expiry;
 	
-	@FindBy(how=How.XPATH,using=searchtext)
-	private WebElement search_text;
+	@FindBy(how=How.XPATH,using=lcaexpiry)
+	private WebElement lca_expiry;
 	
-	@FindBy(how=How.XPATH,using=entrylength)
-	private WebElement showentrynum;
+	@FindBy(how=How.XPATH,using=photoidissue)
+	private WebElement photoid_issue;
+	
+	@FindBy(how=How.XPATH,using=photoidexpiry)
+	private WebElement photoid_expiry;
+	
+	@FindBy(how=How.XPATH,using=updatedocuments)
+	private WebElement update_documents;
 	
 	
 	
-	public WebElement getbottomtext()
+	public WebElement getUploadi9()
 	{
-		return bottomtext;
+		return upload_i9;
 	}
 	
-	public WebElement getprofile() {
-		return meprofile;
+	public WebElement getUploadLca() {
+		return upload_lca;
 	}
-	public WebElement getclientinvite() {
-		return client_invite;
+	public WebElement getUploadPhotoid() {
+		return upload_photoid;
 	}
-	public WebElement getclientlist() {
-		return clientlist;
-	}*/
-	public WebElement getloggoff() {
-		return logout;
+	public WebElement geti9expiry() {
+		return i9_expiry;
+	}
+	public WebElement getlcaexpiry() {
+		return lca_expiry;
 	}
 	
+	public WebElement getPhotoidissue()
+	{
+		return photoid_issue;
+	}
 	
+	public WebElement getPhotoidexpiry()
+	{
+		return photoid_expiry;
+	}
+	
+	public WebElement getUploadlink() {
+		return upload_link;
+	}
 	
 	
 	public WebElement getcontract() {
@@ -170,12 +201,37 @@ private final String empname="//p[@class='name']";
 		return Add;
 	}
 
-
-
-
 	public WebElement getEmpName() {
 		// TODO Auto-generated method stub
 		return employeename;
+	}
+	public WebElement getUpdateDocuments()
+	{
+		return update_documents;
+	}
+	public WebElement getNoncompliance()
+	{
+		return Noncompliant;
+	}
+	public WebElement getCritical()
+	{
+		return Critical;
+	}
+	public WebElement getCompliance()
+	{
+		return Compliant;
+	}
+	public WebElement getRecentlyAdded()
+	{
+		return Recentlyadded;
+	}
+	public WebElement getAll()
+	{
+		return All;
+	}
+	public WebElement getHeading()
+	{
+		return Heading;
 	}
 }
 

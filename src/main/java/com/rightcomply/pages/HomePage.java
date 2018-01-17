@@ -39,6 +39,7 @@ public class HomePage extends Page {
 	private final String forgotpasssubmit=".//*[@id='create-account']/div[2]/input";
 	private final String registerbutton="make_payment";
 	private final String emailerror="//label[@id='email-error']";
+	private final String loginemailerror=".//*[@id='login_form']/ul/li[1]/div/span";
 
 	
 	//private final String errorinvalidlogin="/html/body/div[1]/div/div/div[1]/p";
@@ -51,6 +52,9 @@ public class HomePage extends Page {
 	
 	@FindBy(how=How.XPATH,using=emailerror)
 	private WebElement email_error;
+	
+	@FindBy(how=How.XPATH,using=loginemailerror)
+	private WebElement loginemail_error;
 	
 	@FindBy(how=How.ID,using=lastname)
 	private WebElement l_name;
@@ -197,5 +201,9 @@ public class HomePage extends Page {
 	public WebElement getEmailerr()
 	{
 		return email_error;
+	}
+	public WebElement getLoginEmailErr()
+	{
+		return loginemail_error;
 	}
 }

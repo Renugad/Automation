@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.rightcomply.pages.ValidateForgotpassword">
+      <class name="com.rightcomply.pages.VendorPostDashboardTest">
         <methods>
           <include name="init"/>
           <include name="tearDown"/>
           <include name="setScreenshot"/>
           <include name="testInit"/>
-          <include name="emailvalidation"/>
+          <include name="validatesearch"/>
         </methods>
-      </class> <!-- com.rightcomply.pages.ValidateForgotpassword -->
+      </class> <!-- com.rightcomply.pages.VendorPostDashboardTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

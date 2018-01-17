@@ -3,6 +3,7 @@ package com.rightcomply.pages;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
@@ -88,22 +89,66 @@ public class VendorPostDashboardTest<WebElements> extends TestBase{
 		
 		System.out.println("Testcase to validate usericon link");
 		//reuse.mouseover(vendordash.getuserdropdown(), webDriver);
-		Assert.assertTrue(vendordash.getloggoff().isDisplayed());
-		
+		//Assert.assertTrue(vendordash.getloggoff().isDisplayed());
+
 		System.out.println("Testcase to validate usericon link passed log off is successfull");
 	}
 	@Test(description="To Verify the Functionality for Search",enabled=false)
 	public void validatesearch() throws InterruptedException
 		{
+		vendordash.getEmployee().click();
 		System.out.println("Testcase to validate search functionality in posthiring dashboard");
-		String searchkey="sunil";
+		//String searchkey="sunil";
 		Actions act=new Actions(webDriver);
 		act.moveToElement(vendordash.getsearch()).doubleClick().perform();
 		Thread.sleep(6000);
-		vendordash.getsearchText().sendKeys("Sunil");
+		reuse.mouseover(vendordash.getsearchText(), webDriver);
+		vendordash.getsearchText().sendKeys("Prathiba");
+		Thread.sleep(5000);
+		vendordash.getsearchText().sendKeys(Keys.ENTER);
 		Thread.sleep(7000);
-		Assert.assertEquals(vendordash.getEmpName().getText(),"sunil");
+		Assert.assertEquals(vendordash.getEmpName().getText(),"Prathiba");
 		}
-	
+	@Test(description="To validate Non compliance",priority=4)
+	public void validateNoncompliance()
+	{
+		vendordash.getEmployee().click();
+		vendordash.getNoncompliance().click();
+		System.out.println(vendordash.getHeading().getText());
+		System.out.println(vendordash.getHeading().getText().contains("Non Compliant"));
 		
+	}
+	
+
+@Test(description="To validate compliance",priority=5)
+public void validateCompliance()
+{
+	vendordash.getEmployee().click();
+	vendordash.getCompliance().click();
+	System.out.println(vendordash.getHeading().getText());
+	System.out.println(vendordash.getHeading().getText().contains("Compliant"));
+	
+}
+
+@Test(description="To validate Non compliance",priority=6)
+public void validateAll()
+{
+	vendordash.getEmployee().click();
+	vendordash.getAll().click();
+	System.out.println(vendordash.getHeading().getText());
+	System.out.println(vendordash.getHeading().getText().contains("All"));
+	
+}
+
+@Test(description="To validate Non compliance",priority=7)
+public void validateRecentlyadded()
+{
+	vendordash.getEmployee().click();
+	vendordash.getRecentlyAdded().click();
+	System.out.println(vendordash.getHeading().getText());
+	System.out.println(vendordash.getHeading().getText().contains("Recently Added"));
+	
+}
+
+
 }
