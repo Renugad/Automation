@@ -35,11 +35,18 @@ private final String photoidissue=".//*[@id='photoissue_date']";
 private final String photoidexpiry=".//*[@id='photoexpiry_date']";
 private final String updatedocuments=".//*[@id='all_form_submit']";
 private final String heading="//h2[@class='counts text-left pull-left']";
+private final String critical_text="//span[@class='bg-orange']";
+private final String warning_text="//span[@class='bg-drk-yellow']";
+private final String notify_text="//span[@class='bg-yellow']";
+private final String connected="//div[@class='col-sm-6 cards-pad my-clntdash']";
+
+
 
 
 
 	@FindBy(how=How.XPATH,using=heading)
 	private WebElement Heading;
+	
 	@FindBy(how=How.XPATH,using=uploaddocumentlink)
 	private WebElement upload_link;
 
@@ -127,7 +134,14 @@ private final String heading="//h2[@class='counts text-left pull-left']";
 	@FindBy(how=How.XPATH,using=updatedocuments)
 	private WebElement update_documents;
 	
+	@FindBy(how=How.XPATH,using=critical_text)
+	private WebElement criticaltext;
 	
+	@FindBy(how=How.XPATH,using=warning_text)
+	private WebElement warningtext;
+	
+	@FindBy(how=How.XPATH,using=notify_text)
+	private WebElement notifytext;
 	
 	public WebElement getUploadi9()
 	{
@@ -233,5 +247,21 @@ private final String heading="//h2[@class='counts text-left pull-left']";
 	{
 		return Heading;
 	}
+	
+	public WebElement getCriticaltext()
+	{
+		return criticaltext;
+	}
+	
+	public WebElement getWarningtext()
+	{
+		return warningtext;
+	}
+	
+	public WebElement getNotifytext()
+	{
+		return notifytext;
+	}
+	
 }
 

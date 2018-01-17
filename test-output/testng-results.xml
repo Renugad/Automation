@@ -1,145 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="8" passed="8">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="49702" started-at="2018-01-16T23:27:47Z" finished-at="2018-01-16T23:28:37Z">
+  <suite name="Default suite" duration-ms="46181" started-at="2018-01-17T19:08:06Z" finished-at="2018-01-17T19:08:52Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="49702" started-at="2018-01-16T23:27:47Z" finished-at="2018-01-16T23:28:37Z">
-      <class name="com.rightcomply.pages.VendorPostDashboardTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.rightcomply.pages.VendorPostDashboardTest@2f686d1f]" name="init" is-config="true" duration-ms="8091" started-at="2018-01-16T15:27:47Z" finished-at="2018-01-16T15:27:55Z">
+    <test name="Default test" duration-ms="46181" started-at="2018-01-17T19:08:06Z" finished-at="2018-01-17T19:08:52Z">
+      <class name="com.rightcomply.pages.ValidateCountWorkforce">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.rightcomply.pages.ValidateCountWorkforce@4cf777e8]" name="init" is-config="true" duration-ms="7089" started-at="2018-01-17T11:08:06Z" finished-at="2018-01-17T11:08:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="testInit()[pri:0, instance:com.rightcomply.pages.VendorPostDashboardTest@2f686d1f]" name="testInit" is-config="true" duration-ms="11431" started-at="2018-01-16T15:27:55Z" finished-at="2018-01-16T15:28:07Z">
+        <test-method status="PASS" signature="testInit()[pri:0, instance:com.rightcomply.pages.ValidateCountWorkforce@4cf777e8]" name="testInit" is-config="true" duration-ms="20059" started-at="2018-01-17T11:08:13Z" finished-at="2018-01-17T11:08:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInit -->
-        <test-method status="PASS" signature="verifydashboard()[pri:0, instance:com.rightcomply.pages.VendorPostDashboardTest@2f686d1f]" name="verifydashboard" duration-ms="7582" started-at="2018-01-16T15:28:07Z" description="To verify Dashboard UI Components" finished-at="2018-01-16T15:28:14Z">
+        <test-method status="PASS" signature="testCount()[pri:0, instance:com.rightcomply.pages.ValidateCountWorkforce@4cf777e8]" name="testCount" duration-ms="19012" started-at="2018-01-17T11:08:33Z" description="totalcount" finished-at="2018-01-17T11:08:52Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifydashboard -->
-        <test-method status="PASS" signature="setScreenshot(org.testng.ITestResult)[pri:0, instance:com.rightcomply.pages.VendorPostDashboardTest@2f686d1f]" name="setScreenshot" is-config="true" duration-ms="2" started-at="2018-01-16T15:28:14Z" finished-at="2018-01-16T15:28:14Z">
+        </test-method> <!-- testCount -->
+        <test-method status="PASS" signature="setScreenshot(org.testng.ITestResult)[pri:0, instance:com.rightcomply.pages.ValidateCountWorkforce@4cf777e8]" name="setScreenshot" is-config="true" duration-ms="1" started-at="2018-01-17T11:08:52Z" finished-at="2018-01-17T11:08:52Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifydashboard status=SUCCESS method=VendorPostDashboardTest.verifydashboard()[pri:0, instance:com.rightcomply.pages.VendorPostDashboardTest@2f686d1f] output={null}]]]>
+                <![CDATA[[TestResult name=testCount status=SUCCESS method=ValidateCountWorkforce.testCount()[pri:0, instance:com.rightcomply.pages.ValidateCountWorkforce@4cf777e8] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setScreenshot -->
-        <test-method status="PASS" signature="validateclientflow()[pri:0, instance:com.rightcomply.pages.VendorPostDashboardTest@2f686d1f]" name="validateclientflow" duration-ms="6" started-at="2018-01-16T15:28:14Z" description="To verify client link functional flow" finished-at="2018-01-16T15:28:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateclientflow -->
-        <test-method status="PASS" signature="setScreenshot(org.testng.ITestResult)[pri:0, instance:com.rightcomply.pages.VendorPostDashboardTest@2f686d1f]" name="setScreenshot" is-config="true" duration-ms="1" started-at="2018-01-16T15:28:14Z" finished-at="2018-01-16T15:28:14Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=validateclientflow status=SUCCESS method=VendorPostDashboardTest.validateclientflow()[pri:0, instance:com.rightcomply.pages.VendorPostDashboardTest@2f686d1f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setScreenshot -->
-        <test-method status="PASS" signature="validatecontractflow()[pri:0, instance:com.rightcomply.pages.VendorPostDashboardTest@2f686d1f]" name="validatecontractflow" duration-ms="211" started-at="2018-01-16T15:28:14Z" description="To verify contract link functional flow" finished-at="2018-01-16T15:28:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validatecontractflow -->
-        <test-method status="PASS" signature="setScreenshot(org.testng.ITestResult)[pri:0, instance:com.rightcomply.pages.VendorPostDashboardTest@2f686d1f]" name="setScreenshot" is-config="true" duration-ms="0" started-at="2018-01-16T15:28:15Z" finished-at="2018-01-16T15:28:15Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=validatecontractflow status=SUCCESS method=VendorPostDashboardTest.validatecontractflow()[pri:0, instance:com.rightcomply.pages.VendorPostDashboardTest@2f686d1f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setScreenshot -->
-        <test-method status="PASS" signature="validateNoncompliance()[pri:0, instance:com.rightcomply.pages.VendorPostDashboardTest@2f686d1f]" name="validateNoncompliance" duration-ms="7239" started-at="2018-01-16T15:28:15Z" description="To validate Non compliance" finished-at="2018-01-16T15:28:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateNoncompliance -->
-        <test-method status="PASS" signature="setScreenshot(org.testng.ITestResult)[pri:0, instance:com.rightcomply.pages.VendorPostDashboardTest@2f686d1f]" name="setScreenshot" is-config="true" duration-ms="0" started-at="2018-01-16T15:28:22Z" finished-at="2018-01-16T15:28:22Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=validateNoncompliance status=SUCCESS method=VendorPostDashboardTest.validateNoncompliance()[pri:0, instance:com.rightcomply.pages.VendorPostDashboardTest@2f686d1f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setScreenshot -->
-        <test-method status="PASS" signature="validateemployeesflow()[pri:0, instance:com.rightcomply.pages.VendorPostDashboardTest@2f686d1f]" name="validateemployeesflow" duration-ms="55" started-at="2018-01-16T15:28:22Z" description="To verify employees link functional flow" finished-at="2018-01-16T15:28:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateemployeesflow -->
-        <test-method status="PASS" signature="setScreenshot(org.testng.ITestResult)[pri:0, instance:com.rightcomply.pages.VendorPostDashboardTest@2f686d1f]" name="setScreenshot" is-config="true" duration-ms="0" started-at="2018-01-16T15:28:22Z" finished-at="2018-01-16T15:28:22Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=validateemployeesflow status=SUCCESS method=VendorPostDashboardTest.validateemployeesflow()[pri:0, instance:com.rightcomply.pages.VendorPostDashboardTest@2f686d1f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setScreenshot -->
-        <test-method status="PASS" signature="validateCompliance()[pri:0, instance:com.rightcomply.pages.VendorPostDashboardTest@2f686d1f]" name="validateCompliance" duration-ms="4906" started-at="2018-01-16T15:28:22Z" description="To validate compliance" finished-at="2018-01-16T15:28:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateCompliance -->
-        <test-method status="PASS" signature="validateAll()[pri:0, instance:com.rightcomply.pages.VendorPostDashboardTest@2f686d1f]" name="validateAll" duration-ms="5227" started-at="2018-01-16T15:28:27Z" description="To validate Non compliance" finished-at="2018-01-16T15:28:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateAll -->
-        <test-method status="PASS" signature="setScreenshot(org.testng.ITestResult)[pri:0, instance:com.rightcomply.pages.VendorPostDashboardTest@2f686d1f]" name="setScreenshot" is-config="true" duration-ms="0" started-at="2018-01-16T15:28:27Z" finished-at="2018-01-16T15:28:27Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=validateCompliance status=SUCCESS method=VendorPostDashboardTest.validateCompliance()[pri:0, instance:com.rightcomply.pages.VendorPostDashboardTest@2f686d1f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setScreenshot -->
-        <test-method status="PASS" signature="validateRecentlyadded()[pri:0, instance:com.rightcomply.pages.VendorPostDashboardTest@2f686d1f]" name="validateRecentlyadded" duration-ms="4911" started-at="2018-01-16T15:28:32Z" description="To validate Non compliance" finished-at="2018-01-16T15:28:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateRecentlyadded -->
-        <test-method status="PASS" signature="setScreenshot(org.testng.ITestResult)[pri:0, instance:com.rightcomply.pages.VendorPostDashboardTest@2f686d1f]" name="setScreenshot" is-config="true" duration-ms="0" started-at="2018-01-16T15:28:32Z" finished-at="2018-01-16T15:28:32Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=validateAll status=SUCCESS method=VendorPostDashboardTest.validateAll()[pri:0, instance:com.rightcomply.pages.VendorPostDashboardTest@2f686d1f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setScreenshot -->
-        <test-method status="PASS" signature="setScreenshot(org.testng.ITestResult)[pri:0, instance:com.rightcomply.pages.VendorPostDashboardTest@2f686d1f]" name="setScreenshot" is-config="true" duration-ms="0" started-at="2018-01-16T15:28:37Z" finished-at="2018-01-16T15:28:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=validateRecentlyadded status=SUCCESS method=VendorPostDashboardTest.validateRecentlyadded()[pri:0, instance:com.rightcomply.pages.VendorPostDashboardTest@2f686d1f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setScreenshot -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.rightcomply.pages.VendorPostDashboardTest@2f686d1f]" name="tearDown" is-config="true" duration-ms="797" started-at="2018-01-16T15:28:37Z" finished-at="2018-01-16T15:28:38Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.rightcomply.pages.ValidateCountWorkforce@4cf777e8]" name="tearDown" is-config="true" duration-ms="672" started-at="2018-01-17T11:08:52Z" finished-at="2018-01-17T11:08:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.rightcomply.pages.VendorPostDashboardTest -->
+      </class> <!-- com.rightcomply.pages.ValidateCountWorkforce -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
